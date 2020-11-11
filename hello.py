@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, redirect, session
 from flask.helpers import url_for
 
 app = Flask(__name__)
-
-app.secret_key = 'my_secret_password'
+app.config.from_pyfile('settings.py')
 
 @app.route('/')
 def index():

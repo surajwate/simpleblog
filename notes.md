@@ -30,3 +30,23 @@ Sessions are more secure than cookies, so we are replacing make_response with se
 
 To generate secure code, use
 import os; print(os.urandom(16))
+
+## Environments
+
+- Development (Dev)
+- Production (Prod)
+
+To install requirements
+pip install -r requirements.txt
+
+## Python Dot Env
+
+To manage the enviroment setting
+
+Created .flaskenv
+
+~~~cmd
+FLASK_APP='hello.py'
+FLASK_ENV=development
+SECRET_KEY='my_secret_key_578496'
+~~~
