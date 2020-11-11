@@ -10,11 +10,10 @@ def index():
 def hello(pincode):
     return render_template('hello.html', area_code=pincode) 
 
-@app.route('/form', methods=['GET'])
+@app.route('/form', methods=['GET', 'POST'])
 def form():
-    if request.args.get('submit'):
-        first_name = request.args.get('first_name')
-        last_name = request.args.get('last_name')
+    if request.method == 'POST':
+        first_name = request.form.get('first_name')
+        last_name = request.form.get('last_name')
         return f'First Name: {first_name}, Last Name: {last_name}'
     return render_template('form.html')
-    

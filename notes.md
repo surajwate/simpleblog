@@ -21,3 +21,5 @@ e.g: routing to hello(pincode) from index.html
 - HEAD --> HEAD is almost identical to GET, but without the response body.
 - PATCH
 - DELETE --> The DELETE method deletes the specified resource.
+
+POST is used for sensitive data. The post values doesn't displays on url.
