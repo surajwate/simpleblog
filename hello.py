@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Index Page'
+    return render_template('index.html')
 
-@app.route('/hello/<name>')
-def hello(name):
-    return 'Hello ' + name 
+@app.route('/hello/<int:pincode>')
+def hello(pincode):
+    return render_template('hello.html', area_code=pincode) 
