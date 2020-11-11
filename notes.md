@@ -12,3 +12,12 @@ flask run
 
 Route to particular function from the webpage.
 e.g: routing to hello(pincode) from index.html
+
+## HTTP Verb
+
+- POST --> POST is used to send data to a server to create/update a resource.
+- GET --> GET is used to request data from a specified resource.
+- PUT --> PUT is used to send data to a server to create/update a resource.
+- HEAD --> HEAD is almost identical to GET, but without the response body.
+- PATCH
+- DELETE --> The DELETE method deletes the specified resource.
